@@ -1,6 +1,6 @@
 defmodule HamlComparison.DemoController do
   use HamlComparison.Web, :controller
-  @items [1,2,3,4]
+  @items (1..10_000)
 
   def eex(conn, _params) do
     render conn, "eex.html", items: @items
