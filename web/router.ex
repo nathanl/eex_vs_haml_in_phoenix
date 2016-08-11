@@ -17,6 +17,8 @@ defmodule HamlComparison.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/eex", DemoController, :eex
+    get "/haml", DemoController, :haml
   end
 
   # Other scopes may use custom stacks.
