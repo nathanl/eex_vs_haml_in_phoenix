@@ -9,4 +9,5 @@ defmodule HamlComparison.DemoController do
   def haml(conn, _params) do
     render conn, "haml.html", items: @items
   end
+
 end
